@@ -47,4 +47,12 @@ The above `deploy` command states that production builds will be deployed to the
 
 Be sure to visit your github page (username.github.io) to check if it is working! If all is in order, you can now keep editing and developing on the `source` branch in your repository. To update the builds, just run `npm run deploy` (You don't have to switch branches to do this - stay on `source`).
 
+#### An additional note if you want a Custom Domain
+
+You can usually just save a Custom Domain in the Settings section of your repository, or add a CNAME file to the repo. However, in this case, every time a new production build deploys, it wipes out the CNAME file. To get around this, you can update the `predeploy` command in your package.json like so:
+
+`"predeploy": "npm run build && cp CNAME build/CNAME"`
+
+This will copy over your CNAME file in the `source` branch to the deployed build on `master`.  
+
 Happy coding!
