@@ -1,6 +1,7 @@
 import React from 'react';
 //import profile from './assets/profile.png';
 import Main from './components/Main';
+import Footer from './components/Footer';
 import './styles/App.css';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 
@@ -18,6 +19,7 @@ function App() {
       </Navbar>
       <Container className="App"> 
         <Main></Main>
+        <Footer></Footer>
       </Container>
     </div>
   );

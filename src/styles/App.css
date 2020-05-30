@@ -14,3 +14,8 @@
   color: #2B2D42;
   text-decoration: underline;
 }
+
+.links:hover {
+  color: #2B2D42;
+  cursor: pointer;
+}
