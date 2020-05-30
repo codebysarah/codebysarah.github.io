@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import WebFont from 'webfontloader';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+WebFont.load({
+  google: {
+    families: ['Open Sans:400', 'sans-serif', 'Courier Prime']
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>
