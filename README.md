@@ -16,7 +16,7 @@ Clone the repository and use [`create-react-app`](https://github.com/facebook/cr
 
 Change directory so that you are in your new react app folder. Then install Github pages as a dependancy.
 
-`npm install gh-pages --save-dev`
+`$ npm install gh-pages --save-dev`
 
 #### Move your app's source code to a new branch
 
