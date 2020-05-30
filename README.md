@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi! This is a tiny portfolio site that was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed on Github Pages.
 
-## Available Scripts
+## How To Deploy a React App on your Main Github Page
 
-In the project directory, you can run:
+There is a lot of info out there on how to deploy a react app to a "project" site on Github Pages (i.e. a subdomain on your user page), but deploying an app to the main user page ("username.github.io") is a teensy bit tricky. This is because Github pages requires user pages to be built from the master branch. To deploy a production build on your master branch, and work with your source code on another branch, follow these steps:
 
-### `npm start`
+#### Set up a User page
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Create an empty repository (without the README or any other file), called 'username.github.io'.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#### Create a new React App in the Repository
 
-### `npm test`
+Clone the repository and use [`create-react-app`](https://github.com/facebook/create-react-app) to create a new react app. Keep going with the rest of these steps before developing your app further, to ensure set up has been done correctly.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Install Github Pages
 
-### `npm run build`
+Change directory so that you are in your new react app folder. Then install Github pages as a dependancy.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install gh-pages --save-dev`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Move your App's source code to a new branch
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Right now your code is on a master branch. Move it over to a branch called `source`.
 
-### `npm run eject`
+    $ git checkout -b source
+    $ git push origin source
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Set up deployment to the Master branch
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You'll need to edit the app's `package.json` and add some properties. First, add a homepage property that denotes your Github user page as the homepage for this app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`"homepage": "http://username.github.io/"`
 
-## Learn More
+Then, add two properties to the `scripts` section:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    "scripts": {
+      //...
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -b master -d build"
+    }
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+The above `deploy` command states that production builds will be deployed to the master branch of this repository. Run the following command to deploy your app:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+`$ npm run deploy`
 
-### Analyzing the Bundle Size
+Be sure to visit your github page (username.github.io) to check if it is working! If all is in order, you can now keep editing and developing on the `source` branch in your repository. To update the builds, just run `npm run deploy` (You don't have to switch branches to do this - stay on `source`).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Happy coding!
