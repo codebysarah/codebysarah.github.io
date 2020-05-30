@@ -1,4 +1,4 @@
-Hi! This is a little react app, built with [Create React App](https://github.com/facebook/create-react-app) and deployed on Github Pages.
+Hi! This is a little React app deployed on Github Pages.
 
 ## How To Deploy a React App on your Github Pages User Page
 
