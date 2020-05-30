@@ -1,6 +1,6 @@
-Hi! This is a tiny portfolio site that was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed on Github Pages.
+Hi! This is a little react app, built with [Create React App](https://github.com/facebook/create-react-app) and deployed on Github Pages.
 
-## How To Deploy a React App on your Github Page's Main Page
+## How To Deploy a React App on your Github Pages User Page
 
 There is a lot of info out there on how to deploy a react app to a "project" site on Github Pages (i.e. a subdomain on your user page), but deploying an app to the main user page ("username.github.io") is a teensy bit tricky. This is because Github pages requires user pages to be built from the master branch. To deploy a production build on your master branch, and work with your source code on another branch, follow these steps:
 
