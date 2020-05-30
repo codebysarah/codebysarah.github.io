@@ -12,7 +12,7 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#home">home</Nav.Link>
+            <Nav.Link className="active" href="#home">home</Nav.Link>
             <Nav.Link href="mailto:codebysarah@gmail.com">contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>

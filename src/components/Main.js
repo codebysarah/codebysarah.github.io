@@ -15,12 +15,12 @@ function Main() {
         </Row>
         <Row>
           <p className="bio">I'm a Seattle-based software engineer
-            with a focus on full-stack web development. My professional experience
-            spans operating system programming at big tech, to web development at
-            small startups. I believe in creating engaging, user-centric digital
-            experiences, and am a forever-student of design. Feel free to <a
-            className="links" href="mailto:codebysarah@gmail.com">drop me a
-            line</a>.</p>
+            with a strong interest in product and user-centric design. 
+            My professional experience spans operating system programming 
+            at big tech, to web development at small startups. 
+            I believe in creating engaging digital experiences, and am a 
+            forever-student of design. Feel free to <a className="links" 
+            href="mailto:codebysarah@gmail.com">drop me a line</a>.</p>
         </Row>
       </Col>
     </Row>
