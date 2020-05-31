@@ -8,7 +8,7 @@ There is a lot of info out there on how to deploy a react app to a "project" sit
 
 Create an empty repository (without the README or any other file), called 'username.github.io'.
 
-#### Create a new React App in the Repository
+#### Create a new React app in the repository
 
 Clone the repository and use [`create-react-app`](https://github.com/facebook/create-react-app) to create a new react app. Keep going with the rest of these steps before developing your app further, to ensure set up has been done correctly.
 
@@ -26,7 +26,7 @@ Right now your code is on a master branch. Move it over to a branch called `sour
     $ git push origin source
 
 
-#### Set up deployment to the Master branch
+#### Set up deployment to the master branch
 
 You'll need to edit the app's `package.json` and add some properties. First, add a `homepage` property that denotes your Github user page as the homepage for this app.
 
@@ -45,14 +45,19 @@ The above `deploy` command states that production builds will be deployed to the
 
 `$ npm run deploy`
 
-Be sure to visit your github page (username.github.io) to check if it is working! If all is in order, you can now keep editing and developing on the `source` branch in your repository. To update the builds, just run `npm run deploy` (You don't have to switch branches to do this - stay on `source`).
+Be sure to visit your github page (username.github.io) to check if it is working! 
 
-#### An additional note if you want a Custom Domain
+#### Develop / update your source code on the source branch
 
-You can usually save a Custom Domain in the Settings section of your repository, or add a CNAME file to the repo. However, in this case, every time a new production build deploys, it wipes out the CNAME file. To get around this, update the `predeploy` command in your package.json like so:
+If all is in order, you can now keep editing and developing on the `source` branch in your repository. To update the builds, just run `npm run deploy`. Note that you don't have to switch branches to do this - stay on `source`.
+
+#### An additional note if you want a custom domain name
+
+You can usually save a custom domain in the Settings section of your repository, or by adding a CNAME file to the repo. However, in this case, every time a new production build deploys, it wipes out the CNAME file on the `master` branch. To get around this, update the `predeploy` command in your package.json like so:
 
 `"predeploy": "npm run build && cp CNAME build/CNAME"`
 
 This will copy over your CNAME file in the `source` branch to the deployed build on `master`.  
 
 Happy coding!
+Sarah
