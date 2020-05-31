@@ -8,7 +8,7 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/codebysarah/codebysarah.github.io/tree/source">
-        Made with &hearts;, React &  Github pages.</a>
+        Made with &hearts;, React & Github Pages.</a>
     </div>
   );
 }
