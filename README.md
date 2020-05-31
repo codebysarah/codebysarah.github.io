@@ -49,7 +49,7 @@ Be sure to visit your github page (username.github.io) to check if it is working
 
 #### An additional note if you want a Custom Domain
 
-You can usually just save a Custom Domain in the Settings section of your repository, or add a CNAME file to the repo. However, in this case, every time a new production build deploys, it wipes out the CNAME file. To get around this, you can update the `predeploy` command in your package.json like so:
+You can usually save a Custom Domain in the Settings section of your repository, or add a CNAME file to the repo. However, in this case, every time a new production build deploys, it wipes out the CNAME file. To get around this, update the `predeploy` command in your package.json like so:
 
 `"predeploy": "npm run build && cp CNAME build/CNAME"`
 
