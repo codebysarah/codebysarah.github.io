@@ -234,7 +234,7 @@ export default class PhaserGameInstance extends PureComponent<PhaserGameInstance
         mode: Phaser.Scale.FIT,
         autoCenter: Phaser.Scale.CENTER_BOTH },
       parent: "PhaserContainer",
-      backgroundColor: "#87def9",
+      backgroundColor: "#87DEF9",
       scene: [PhaserTitleScene, PhaserGameScene, PhaserEndScene],
       physics: {
         default: "arcade",

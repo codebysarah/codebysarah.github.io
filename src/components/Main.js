@@ -13,7 +13,7 @@ function Main(props) {
         </Col>
         <Col sm={8}>
           <Row>
-            <p className="typewriter name-header">Hi! I'm Sarah.</p>
+            <p className={ props.played ? "name-header" : "typewriter name-header"}>Hi! I'm Sarah.</p>
           </Row>
           <Row>
             <p className="bio">I'm a Seattle-based software engineer
@@ -21,12 +21,11 @@ function Main(props) {
               My professional experience spans operating system programming 
               at big tech, to web development at small startups. 
               I believe in creating engaging digital experiences, and am a 
-              forever-student of design. Feel free to <a className="links" 
-              href="mailto:codebysarah@gmail.com">drop me a line</a>.</p>
+              forever-student of design.</p>
           </Row>
         </Col>
       </Row>
-      <Footer onClick={props.onClick} visible={props.visible}></Footer>
+      <Footer prompt={props.played} onClick={props.onClick} visible={props.visible}></Footer>
     </div>
   );
 }

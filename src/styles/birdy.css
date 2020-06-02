@@ -1,13 +1,19 @@
 /* Birdy styles */
 
 .birdy {
-  height: 7vmin;
-  text-align: left;
+  margin-bottom: 2em;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+}
+
+.birdy-animate {
   transition: all 0.5s ease;
   animation: birdy-bounce infinite 4s linear;
-  animation-delay: 4s;
+  animation-delay: 5s;
+}
+
+.birdy-img {
+  height: 7vmin;
 }
 
 .birdy:hover {

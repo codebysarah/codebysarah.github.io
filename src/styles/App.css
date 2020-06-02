@@ -19,3 +19,7 @@
   color: #2B2D42;
   cursor: pointer;
 }
+
+.popover-text {
+  text-align:center;
+}
