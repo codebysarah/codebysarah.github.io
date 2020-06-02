@@ -23,10 +23,6 @@
   padding-bottom: 1em;
 }
 
-@media (min-width: 768px) {
-  .birdy-container {text-align: right;}
-}
-
 @keyframes birdy-bounce {
   0%   { transform: translateY(0); }
   10%  { transform: translateY(0); }
@@ -38,3 +34,12 @@
   74%  { transform: translateY(0) rotate(-360deg); }
   100% { transform: translateY(0) rotate(-360deg);}
 }
+
+@media (min-width: 768px) {
+  .birdy-container {text-align: right;}
+}
+
+@media (max-width: 768px) {
+  .birdy-container {display: none;}
+}
+
