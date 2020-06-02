@@ -1,0 +1,40 @@
+/* Birdy styles */
+
+.birdy {
+  height: 7vmin;
+  text-align: left;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 0.5s ease;
+  animation: birdy-bounce infinite 4s linear;
+  animation-delay: 4s;
+}
+
+.birdy:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    cursor: pointer;
+    -webkit-animation-play-state: paused;
+     animation-play-state: paused;
+}
+
+.birdy-container {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .birdy-container {text-align: right;}
+}
+
+@keyframes birdy-bounce {
+  0%   { transform: translateY(0); }
+  10%  { transform: translateY(0); }
+  20%  { transform: translateY(-40px) rotate(0deg); }
+  30%  { transform: translateY(-40px) rotate(-360deg); }
+  50%  { transform: translateY(-40px) rotate(-360deg);}
+  60%  { transform: translateY(0) rotate(-360deg); }
+  67%  { transform: translateY(-7px) rotate(-360deg); }
+  74%  { transform: translateY(0) rotate(-360deg); }
+  100% { transform: translateY(0) rotate(-360deg);}
+}

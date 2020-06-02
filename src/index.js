@@ -8,7 +8,8 @@ import * as serviceWorker from './serviceWorker';
 
 WebFont.load({
   google: {
-    families: ['Open Sans:400', 'sans-serif', 'Courier Prime']
+    families: ['Open Sans:400', 'sans-serif', 'Courier Prime',
+              'Raleway::latin' ]
   }
 });
 

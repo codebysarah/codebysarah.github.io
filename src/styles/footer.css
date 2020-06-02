@@ -4,7 +4,19 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: right;
-    padding: .5em 1em;
+    text-align: center;
+
     font-size: .85em;
+}
+
+.footer-links {
+  padding-left: 2em;
+}
+
+.links-container {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .links-container {text-align: left;}
 }

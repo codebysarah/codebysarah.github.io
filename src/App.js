@@ -1,25 +1,30 @@
-import React from 'react';
-//import profile from './assets/profile.png';
+import React, { useState } from 'react';
 import Main from './components/Main';
-import Footer from './components/Footer';
+import NerdyBirdy from './components/NerdyBirdy';
 import './styles/App.css';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 
 function App() {
+
+  const [game, setGame] = useState(false);
+
+  const gameOn = () => setGame(true);
+  const gameOff = () => setGame(false);
+
   return (
     <div>
-      <Navbar expand="lg">
+      <Navbar expand="sm">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className="active" href="#home">home</Nav.Link>
+            <Nav.Link className="active" onClick={gameOff} 
+              href="#home">{game ? 'exit game' : 'home'}</Nav.Link>
             <Nav.Link href="mailto:codebysarah@gmail.com">contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       <Container className="App"> 
-        <Main></Main>
-        <Footer></Footer>
+        { game ? <NerdyBirdy></NerdyBirdy> : <Main onClick={gameOn} visible={!game}></Main> }
       </Container>
     </div>
   );
