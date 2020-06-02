@@ -69,7 +69,7 @@ class PhaserGameScene extends Phaser.Scene {
     this.load.image("sky", "sky.png");
     this.load.image("bird", "nerdy.png");
     this.load.image("cloud", "cloud.png");
-    this.load.audio('song', ['fireflies.ogg']);
+    this.load.audio('song', ['fireflies.ogg', 'fireflies.mp3']);
     if (!replay) {
       var progressBar = this.add.graphics();
       var progressBox = this.add.graphics();
