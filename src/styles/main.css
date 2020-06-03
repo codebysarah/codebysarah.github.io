@@ -6,7 +6,7 @@
 }
 
 .picture-frame {
-  text-align: center;
+  text-align: right;
   padding-bottom: 1em;
 }
 
@@ -51,4 +51,7 @@
 
 .bio {
   padding: 1em;
+}
+@media (max-width: 768px) {
+  .picture-frame {text-align: center;}
 }
