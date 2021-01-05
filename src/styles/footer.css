@@ -60,7 +60,7 @@
   .links-container {text-align: right;}
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .footer {
     position: relative;
     bottom: auto;
