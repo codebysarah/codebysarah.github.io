@@ -1,11 +1,14 @@
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
-code {
-  font-family: 'Courier Prime', monospace;
+.elsie {
+  font-family: 'Elsie Swash Caps', cursive;
+  font-weight: 400;
+  font-size: 1.4rem;
 }

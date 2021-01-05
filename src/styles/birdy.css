@@ -1,7 +1,6 @@
 /* Birdy styles */
 
 .birdy {
-  margin-bottom: 2em;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
@@ -13,20 +12,23 @@
 }
 
 .birdy-img {
-  height: 7vmin;
+  height: 30px;
+  width: auto;
 }
 
 .birdy:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
-    cursor: pointer;
     -webkit-animation-play-state: paused;
      animation-play-state: paused;
 }
 
 .birdy-container {
-  text-align: center;
-  padding-bottom: 1em;
+  text-align: left;
+}
+
+.birdy-container:hover {
+  cursor: pointer;
 }
 
 @keyframes birdy-bounce {
@@ -41,11 +43,9 @@
   100% { transform: translateY(0) rotate(-360deg);}
 }
 
-@media (min-width: 768px) {
-  .birdy-container {text-align: right;}
-}
-
-@media (max-width: 768px) {
-  .birdy-container {display: none;}
+@media (max-width: 1000px) {
+  .birdy-container, .bubble {
+    display: none;
+  }
 }
 

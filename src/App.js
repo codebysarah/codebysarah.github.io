@@ -20,21 +20,21 @@ function App() {
   const popover = (
     <Popover id="popover-basic" className="popover-text">
       <Popover.Content>
-        <strong>codebysarah@gmail.com</strong>.
+        <strong>codebysarah@gmail.com</strong>
       </Popover.Content>
     </Popover>
   );
 
   return (
     <div>
-      <Navbar expand="sm">
+      <Navbar expand="sm" className="elsie">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link className="active" onClick={gameOff} 
-              href="#">{game ? 'exit game' : 'home'}</Nav.Link>
+              href="#">{game ? 'Exit Game' : 'Home'}</Nav.Link>
             <OverlayTrigger trigger={['hover', 'focus']} placement="bottom" overlay={popover}>
-              <Nav.Link href="mailto:codebysarah@gmail.com">contact</Nav.Link>
+              <Nav.Link href="mailto:codebysarah@gmail.com">Contact</Nav.Link>
             </OverlayTrigger>
           </Nav>
         </Navbar.Collapse>

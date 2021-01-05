@@ -2,22 +2,22 @@
 
 .App {
   background-color: #FFFFFF;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: #000000;
+  height: 100%;
 }
 
 .links {
-  color: #2B2D42;
-  text-decoration: underline;
+  color: #000000;
+  border-bottom: 2px solid rgba(135, 222, 249, 0.9);
 }
 
 .links:hover {
-  color: #2B2D42;
-  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: #404040;
 }
 
 .popover-text {

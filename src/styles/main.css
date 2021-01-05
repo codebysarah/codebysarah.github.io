@@ -1,8 +1,7 @@
 /* Main or Home page styles */
 
 .main {
-  align-items: center;
-  justify-content: center;
+  padding-top: 15%;
 }
 
 .picture-frame {
@@ -24,34 +23,27 @@
 }
 
 .name-header {
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Elsie Swash Caps', cursive;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.8rem;
   overflow: hidden; 
   white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .1em; 
-}
-
-.typewriter {
-  border-right: .15em solid #2B2D42; 
-  animation: typing 3s steps(20) .5s 1 normal both,
-             blink-cursor 800ms steps(44) infinite normal;
-}
-
-@keyframes typing {
-  from{ width: 0; }
-  to{ width: 10em; }
-}
-
-@keyframes blink-cursor {
-  from { border-right-color: #2B2D42; }
-  to { border-right-color: transparent; }
+  padding-left: 1rem;
+  margin-top: -.5rem;
+  letter-spacing: .1rem;
 }
 
 .bio {
-  padding: 1em;
+  padding: 0 1rem;
 }
 @media (max-width: 768px) {
-  .picture-frame {text-align: center;}
+  .picture-frame {
+    text-align: center;
+  }
+  .name-header, .bio {
+    margin: 0 auto;
+  }
+  .bio {
+    padding: 2rem;
+  }
 }

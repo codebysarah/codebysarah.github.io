@@ -130,7 +130,7 @@ class PhaserGameScene extends Phaser.Scene {
     this.clouds = this.physics.add.group({
       key: 'cloud',
       repeat: 5,
-      setXY: { x: 300, y: 200, 
+      setXY: { x: 700, y: 200, 
         stepX: 150},});
     this.clouds.children.iterate(function(cloud) {
       cloud.y = Phaser.Math.RND.integerInRange(1,5)*100;
@@ -261,15 +261,17 @@ export default class PhaserGameInstance extends PureComponent<PhaserGameInstance
         <div>
           <Row className="justify-content-center">
             <Col sm={8}>
-              <h1 className="game-header">Nerdy Birdy Just Wants to Fly</h1>
-              <p>...home, to her coding tutorials. Or maybe to re-read all seven Harry Potter
-            books. But some pesky bullies are blocking her way. Help her escape them!</p>
+              <h1 className="game-header elsie">Nerdy Birdy Just Wants to Fly</h1>
+              <p>...home, to deploy urgent updates to prod. Or maybe to re-read The Goblet of Fire. But some pesky bullies are blocking her way. Help her escape them!</p>
             </Col>
           </Row>
           <Row className="justify-content-center">
             <Col sm={10}>
               <div className={gameDisplayClass} id="PhaserContainer"></div>
             </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <p className="game-footer">assets designed in Adobe Illustrator. <a className="links" href="https://github.com/codebysarah/codebysarah.github.io/blob/source/src/components/NerdyBirdy.js" target="_blank">game development</a> in Phaser 3. ♫ Fireflies by Owl City.</p>
           </Row>
         </div>
       )
