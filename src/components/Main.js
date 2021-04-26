@@ -20,8 +20,8 @@ function Main(props) {
               with a strong interest in product and user-centric design. 
               My professional experience spans operating system programming 
               at big tech, to web development at small startups. 
-              I believe in creating engaging (& <a className="links" href="https://humanebydesign.com/" target="_blank">humane</a>) digital experiences, and am a forever-student of design (always learning)! Currently, 
-              I work part-time, balancing work life with #MomLife. I also <a className="links" href="https://www.instagram.com/bysarahdandia/" target="_blank">dabble in the arts</a>. 
+              I believe in creating engaging (& <a className="links" href="https://humanebydesign.com/" rel="noopener noreferrer" target="_blank">humane</a>) digital experiences, and am a forever-student of design (always learning)! Currently, 
+              I work part-time, balancing work life with #MomLife. I also <a className="links" rel="noopener noreferrer" href="https://www.sarahdandia.com/" target="_blank">dabble in the arts</a>. 
                Feel free to drop me a line!</p>
           </Row>
         </Col>

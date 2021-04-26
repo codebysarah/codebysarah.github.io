@@ -271,7 +271,7 @@ export default class PhaserGameInstance extends PureComponent<PhaserGameInstance
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <p className="game-footer">assets designed in Adobe Illustrator. <a className="links" href="https://github.com/codebysarah/codebysarah.github.io/blob/source/src/components/NerdyBirdy.js" target="_blank">game development</a> in Phaser 3. ♫ Fireflies by Owl City.</p>
+            <p className="game-footer">assets designed in Adobe Illustrator. <a className="links" rel="noopener noreferrer" href="https://github.com/codebysarah/codebysarah.github.io/blob/source/src/components/NerdyBirdy.js" target="_blank">game development</a> in Phaser 3. ♫ Fireflies by Owl City.</p>
           </Row>
         </div>
       )

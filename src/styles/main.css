@@ -23,9 +23,9 @@
 }
 
 .name-header {
-  font-family: 'Elsie Swash Caps', cursive;
+  font-family: 'Lora', serif;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   overflow: hidden; 
   white-space: nowrap;
   padding-left: 1rem;
