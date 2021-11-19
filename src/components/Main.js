@@ -21,7 +21,7 @@ function Main(props) {
               My professional experience spans operating system programming 
               at big tech, to web development at small startups. 
               I believe in creating engaging (& <a className="links" href="https://humanebydesign.com/" rel="noopener noreferrer" target="_blank">humane</a>) digital experiences, and am a forever-student of design (always learning)! Currently, 
-              I work part-time, balancing work life with #MomLife. I also <a className="links" rel="noopener noreferrer" href="https://www.sarahdandia.com/" target="_blank">dabble in the arts</a>. 
+              take on occasional projects, balancing work life with #MomLife. I also <a className="links" rel="noopener noreferrer" href="https://www.sarahdandia.com/" target="_blank">dabble in the arts</a>. 
                Feel free to drop me a line!</p>
           </Row>
         </Col>
