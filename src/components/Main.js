@@ -16,7 +16,7 @@ function Main(props) {
             <p className="name-header">Hi! I&#8217;m Sarah.</p>
           </Row>
           <Row>
-            <p className="bio">I'm a Seattle-based software engineer
+            <p className="bio">I'm an Austin-based full-stack software engineer
               with a strong background in user-centric design. 
               My professional experience spans operating system programming 
               at big tech, to web development at small startups. 
