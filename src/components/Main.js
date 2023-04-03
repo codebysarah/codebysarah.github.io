@@ -16,11 +16,11 @@ function Main(props) {
             <p className="name-header">Hi! I&#8217;m Sarah.</p>
           </Row>
           <Row>
-            <p className="bio">I'm an Austin-based full-stack software engineer
+            <p className="bio">I'm a full-stack software engineer
               with a strong background in user-centric design. 
               My professional experience spans operating system programming 
               at big tech, to web development at small startups. 
-              I believe in creating engaging & humane digital experiences, and am a forever-student of design (always learning)! Currently, I take on occasional projects, balancing work life with #MomLife. I also <a className="links" rel="noopener noreferrer" href="https://www.sarahdandia.com/" target="_blank">dabble in the arts</a>. 
+              I believe in creating engaging & humane digital experiences, and am a forever-student of design (always learning)! I'm currently based in Austin and take on occasional projects, balancing work life with #MomLife. I also <a className="links" rel="noopener noreferrer" href="https://www.sarahdandia.com/" target="_blank">dabble in the arts</a>. 
                Feel free to drop me a line!</p>
           </Row>
         </Col>
