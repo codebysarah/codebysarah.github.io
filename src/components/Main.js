@@ -17,11 +17,12 @@ function Main(props) {
           </Row>
           <Row>
             <p className="bio">I'm a full-stack software engineer
-              with a strong background in user-centric design. 
-              My professional experience spans operating system programming 
-              at big tech, to web development at small startups. 
-              I believe in creating engaging & humane digital experiences, and am a forever-student of design (always learning)! I'm currently based in Austin and take on occasional projects, balancing work life with #MomLife. I also <a className="links" rel="noopener noreferrer" href="https://www.sarahdandia.com/" target="_blank">dabble in the arts</a>. 
-               Feel free to drop me a line!</p>
+              with a strong foundation in user-centric design. 
+              My experience spans operating system development at leading tech companies,
+              to building high impact web applications for startups.  
+              I'm passionate about crafting intuitive and engaging digital experiences. Based 
+              in Austin, I take on select projects while balancing work with family life. I also <a className="links" rel="noopener noreferrer" href="https://www.watercolorbysarah.com/" target="_blank">dabble in the arts</a>. 
+               Lets connect!</p>
           </Row>
         </Col>
       </Row>
