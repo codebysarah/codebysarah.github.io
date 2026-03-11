@@ -46,6 +46,6 @@
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
     "eslint-plugin-react-hooks": "^4.0.4",
-    "gh-pages": "^3.0.0"
+    "gh-pages": "^5.0.0"
   }
 }
