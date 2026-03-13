@@ -87,8 +87,8 @@ class PhaserGameScene extends Phaser.Scene {
     this.load.image("cloud", "cloud.png");
 
     this.load.audio('thunder', [
-      'https://raw.githubusercontent.com/codebysarah/codebysarah.github.io/master/thunder.ogg',
-      'https://raw.githubusercontent.com/codebysarah/codebysarah.github.io/master/thunder.mp3'
+      'thunder.ogg',
+      'thunder.mp3'
     ]);
 
     this.load.audio('song', [
